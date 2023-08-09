@@ -1,0 +1,25 @@
+{
+  "roles": ["admin", "user", "guest"],
+  "permissions": {
+    "guest": [
+      {
+        "resource": "book",
+        "scope": "get"
+      }
+    ],
+    "user": [
+      {
+        "resource": "book",
+        "scope": "get"
+      },
+      {
+        "resource": "book",
+        "scope": "review"
+      },
+      {
+        "resource": "book",
+        "scope": "order"
+      }
+    ]
+  }
+}
